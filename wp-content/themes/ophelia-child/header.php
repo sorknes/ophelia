@@ -33,16 +33,23 @@
 		<![endif]-->	
 	</head>
 	
-	<body <?php body_class(); ?>>
+	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 		
 		<!--start: header -->	
-		<header role="banner">
-			<!-- http://responsive-nav.com/ -->
-			
-			<h1 style="font-weight: 800; text-transform: uppercase;">Velkommen til nytt nettsted</h1>
-			
+		<header role="banner" itemscope itemtype="http://schema.org/WPHeader">
+			<div class="container-fluid">
+				<!-- start: main nav -->
+				<nav id="main-nav" class="" role="nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+					<?php wp_bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
+				</nav>
+				<!-- end: main nav -->
+			</div>
 		</header>
 		<!-- end: header -->
 		
 		<!-- start: container -->
 		<div class="container">
+		
+		
+		<!-- http://responsive-nav.com/ -->
+		<!-- https://gist.github.com/gregrickaby/5917114 -->
