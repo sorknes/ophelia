@@ -2,7 +2,7 @@
 		<!-- end: container -->
 		
 		<!-- start: footer -->
-		<footer role="contentinfo">
+		<footer role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 				
 		</footer>
 		<!-- end: footer -->
