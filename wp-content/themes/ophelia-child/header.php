@@ -38,6 +38,9 @@
 		<!--start: header -->	
 		<header role="banner">
 			<!-- http://responsive-nav.com/ -->
+			
+			<h1 style="font-weight: 800; text-transform: uppercase;">Velkommen til nytt nettsted</h1>
+			
 		</header>
 		<!-- end: header -->
 		
