@@ -27,6 +27,14 @@ function remove_some_widgets(){
 add_action( 'widgets_init', 'remove_some_widgets', 11 );
 
 
+function load_fonts() {
+            wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400,800,800italic,400italic,700,700italic');
+            wp_enqueue_style( 'googleFonts');
+        }
+    
+    add_action('wp_print_styles', 'load_fonts');
+
+
 /***************************************************
 *
  	Register javascripts -> Add them to wp_footer
