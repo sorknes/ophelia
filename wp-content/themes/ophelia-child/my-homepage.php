@@ -8,12 +8,12 @@ get_header();
 
 ?>
 
-	<!-- start: content -->
-	<div>
-		<main>
-		
-		</main>
-	</div>
-	<!-- end: content -->
+			<!-- start: content -->
+			<div>
+				<main role="main">
+				
+				</main>
+			</div>
+			<!-- end: content -->
 
 <?php get_footer(); ?>
