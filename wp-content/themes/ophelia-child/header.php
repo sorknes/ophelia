@@ -27,9 +27,9 @@
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->	
 		
-			<!-- respond.js -->
+		<!-- respond.js -->
 		<!--[if lt IE 9]>
-		          <script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+			<script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
 		<![endif]-->	
 	</head>
 	
@@ -37,18 +37,26 @@
 		
 		<!--start: header -->	
 		<header role="banner" itemscope itemtype="http://schema.org/WPHeader">
-			<div class="container-fluid">
+			<div class="container-fluid clearfix">
 				<!-- start: main nav -->
-				<nav id="main-nav" class="" role="nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+				<nav class="nav-collapse" id="nav">
 					<?php wp_bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
 				</nav>
-				<!-- end: main nav -->
+			
+			    <button id="nav-toggle" class="navbar-toggle">
+			    	<span class="screen-reader-text">Meny</span>
+							<div class="icon-bar-wrapper">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</div>
+			    </button>
 			</div>
 		</header>
 		<!-- end: header -->
 		
 		<!-- start: container -->
-		<div class="container">
+		<div class="container" style="height: 2000px;">
 		
 		
 		<!-- http://responsive-nav.com/ -->
