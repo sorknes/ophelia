@@ -42,14 +42,22 @@ function load_fonts() {
 ****************************************************/
 function ophelia_theme_js(){
 	wp_register_script(
+		'ophelia_responsive_nav', 
+		get_stylesheet_directory_uri() . '/library/js/vendor/responsive-nav.min.js', 
+		array('jquery'), 
+		'',
+		true );
+
+    wp_enqueue_script('ophelia_responsive_nav');
+
+	wp_register_script(
 		'ophelia_scripts', 
 		get_stylesheet_directory_uri() . '/library/js/scripts.js', 
 		array('jquery'), 
 		'',
 		true );
 
-    wp_enqueue_script('ophelia_scripts');
-		
+    wp_enqueue_script('ophelia_scripts');	
 }
 add_action( 'wp_footer', 'ophelia_theme_js' );
 
