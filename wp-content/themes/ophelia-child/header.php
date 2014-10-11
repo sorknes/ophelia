@@ -45,19 +45,17 @@
 			
 			    <button id="nav-toggle" class="navbar-toggle">
 			    	<span class="screen-reader-text">Meny</span>
-							<div class="icon-bar-wrapper">
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</div>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
 			    </button>
+			    <!-- end: main nav -->
 			</div>
 		</header>
 		<!-- end: header -->
-		
-		<!-- start: container -->
-		<div class="container" style="height: 2000px;">
-		
+			
+		<!-- start: wrapper -->
+		<main class="wrapper" id="page" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 		
 		<!-- http://responsive-nav.com/ -->
 		<!-- https://gist.github.com/gregrickaby/5917114 -->
