@@ -1,5 +1,5 @@
-		</div>
-		<!-- end: container -->
+		</main>
+		<!-- end: wrapper -->
 		
 		<!-- start: footer -->
 		<footer role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
