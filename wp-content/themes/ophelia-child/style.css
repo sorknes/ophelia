@@ -106,6 +106,8 @@ h1,h2,h3,h4,h5,h6 {
 			text-align: center;
 			vertical-align: middle;
 			display: table-cell;
+			position: relative;
+			z-index: 10;
 		}
 		
 		.intro-inner .row {
@@ -125,7 +127,7 @@ header .container-fluid {
 	padding-left: 0;
 	padding-right: 0;
 	position: fixed;
-	z-index: 10;
+	z-index: 20;
 }
 
 /* ==Navigation */
@@ -220,7 +222,9 @@ header .container-fluid {
 	text-transform: uppercase;
 }
 
-.intro-inner h2 {
+.intro-inner p {
+	width: 50%;
+	margin: 0 auto;
 	font-size: 1.125em;
 }
 
@@ -246,6 +250,25 @@ header .container-fluid {
 	
 	.intro-inner a:hover {
 		background: red;
+	}
+	
+.intro-img-wrapper {
+	height: 100%;
+	width: 100%;
+	
+	top: 0; right: 0; bottom: 0; left: 0;
+	position: absolute;
+}
+
+	.intro-img-wrapper img {
+		width: 100%;
+		height: auto;
+		position: absolute; 
+		top: 0; 
+		left: 0; 
+		right: 0; 
+		bottom: 0; 
+		margin: auto; 
 	}
 
 
