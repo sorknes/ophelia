@@ -55,7 +55,7 @@
 		<!-- end: header -->
 			
 		<!-- start: wrapper -->
-		<main class="wrapper" id="page" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+		<main class="wrapper" id="page" role="main" data-spy="scroll" data-target=".navbar-example" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/LocalBusiness">
 		
 		<!-- http://responsive-nav.com/ -->
 		<!-- https://gist.github.com/gregrickaby/5917114 -->

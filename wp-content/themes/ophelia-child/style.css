@@ -36,6 +36,15 @@ body {
 	border-radius: 0;
 }
 
+.border-bottom {
+	height: 2px;
+	display: block;
+}
+
+.arrow-down {
+	display: none;
+}
+
 a:hover, a:focus {
 		-webkit-transition: all 0.3s;
 		-moz-transition: all 0.3s;
@@ -100,6 +109,11 @@ h1,h2,h3,h4,h5,h6 {
 		position: relative;
 		right: 0; bottom: 0;
 		display: table;
+		background-position: center center;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+		background-size: cover;
 	}
 	
 		.intro-inner {
@@ -217,21 +231,32 @@ header .container-fluid {
 /* =intro
 -------------------------------------------------------------- */
 .intro-inner h1.intro-title {
+	color: #fff;
 	font-size: 3em;
 	font-weight: 800;
 	text-transform: uppercase;
 }
 
+	.intro-inner h1.intro-title span.border-bottom {
+		width: 160px;
+		height: 4px;
+		margin: 5px auto 10px auto;
+		background-color: #fff;
+	}
+
 .intro-inner p {
-	width: 50%;
+	width: 90%;
 	margin: 0 auto;
+	color: #fff;
 	font-size: 1.125em;
 }
 
 .intro-inner .btn {
 	width: 200px;
 	padding: 0.5em 3em;
+	color: #fff;
 	font-size: 1.5em;
+	border-color: #fff;
 	border-width: 4px;
 }
 
@@ -240,35 +265,14 @@ header .container-fluid {
 		margin: 20px auto 0 auto;
 	}
 	
-	.intro-inner a span {
-		width: 20px;
-		height: 2px;
+	.intro-inner a span.border-bottom {
+		width: 40px;
 		margin: 5px auto;
-		display: block;
-		background-color: #000;
+		background-color: #fff;
 	}
 	
 	.intro-inner a:hover {
 		background: red;
-	}
-	
-.intro-img-wrapper {
-	height: 100%;
-	width: 100%;
-	
-	top: 0; right: 0; bottom: 0; left: 0;
-	position: absolute;
-}
-
-	.intro-img-wrapper img {
-		width: 100%;
-		height: auto;
-		position: absolute; 
-		top: 0; 
-		left: 0; 
-		right: 0; 
-		bottom: 0; 
-		margin: auto; 
 	}
 
 
@@ -283,6 +287,20 @@ header .container-fluid {
 /* =Media queries
 -------------------------------------------------------------- */
 @media screen and (min-width: 768px) {
+	/* =Global
+	-------------------------------------------------------------- */
+	.arrow-down {
+		width: 100%;
+		color: rgba(255,255,255,0.5);
+		text-align: center;
+		font-size: 4em;
+		line-height: 0;
+		position: absolute;
+		bottom: 0;
+		z-index: 40;
+	}
+	
+
 	/* =Header
 	-------------------------------------------------------------- */
 	/* ==Navigation */
@@ -321,11 +339,22 @@ header .container-fluid {
 	/* =intro
 	-------------------------------------------------------------- */
 	.intro-inner h1.intro-title {
-		font-size: 5em;
+		font-size: 5.5em;
 	}
+	
+		.intro-inner h1.intro-title span.border-bottom {
+			width: 160px;
+			height: 4px;
+			margin: 5px auto 60px auto;
+			background-color: #fff;
+		}
 	
 	.intro-inner h2 {
 		font-size: 2.125em;
+	}
+	
+	.intro-inner p {
+		width: 50%;
 	}
 	
 	.intro-inner .intro-btn .btn-right a,
