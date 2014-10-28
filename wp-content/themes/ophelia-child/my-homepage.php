@@ -69,5 +69,11 @@ get_header();
 					news
 				</div>
 			</div>
+			
+			<div id="dinner" class="container dinner">
+				<div class="row">
+					dinner
+				</div>
+			</div>
 
 <?php get_footer(); ?>
