@@ -38,9 +38,20 @@
 		<!--start: header -->	
 		<header role="banner" itemscope itemtype="http://schema.org/WPHeader">
 			<div class="container-fluid clearfix">
+				<!-- start: logo -->
+				<div class="logo">
+					<a itemprop="url" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>">
+					<figure>
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/images/logo.svg" alt="Ophelia logo" title="Ophelia logo" />
+					</figure>
+					</a>
+				</div>
+				<!-- end: logo -->
+			
 				<!-- start: main nav -->
 				<nav class="nav-collapse" id="nav">
-					<?php wp_bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
+					<?php //wp_bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
+					<?php wp_ophelia_bootstrap_main_nav( array( 'link_before' => '<span>' ) ); // Adjust using Menus in Wordpress Admin ?>
 				</nav>
 			
 			    <button id="nav-toggle" class="navbar-toggle">
@@ -55,7 +66,7 @@
 		<!-- end: header -->
 			
 		<!-- start: wrapper -->
-		<main class="wrapper" id="page" role="main" data-spy="scroll" data-target=".navbar-example" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/LocalBusiness">
+		<main class="wrapper" id="page" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/LocalBusiness">
 		
 		<!-- http://responsive-nav.com/ -->
 		<!-- https://gist.github.com/gregrickaby/5917114 -->
