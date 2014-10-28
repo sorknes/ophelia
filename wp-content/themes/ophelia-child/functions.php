@@ -51,6 +51,15 @@ function ophelia_theme_js(){
     wp_enqueue_script('ophelia_responsive_nav');
 
 	wp_register_script(
+		'ophelia_smooth_scroll', 
+		get_stylesheet_directory_uri() . '/library/js/vendor/jquery.easing.min.js', 
+		array('jquery'), 
+		'',
+		true );
+
+    wp_enqueue_script('ophelia_smooth_scroll');
+
+	wp_register_script(
 		'ophelia_scripts', 
 		get_stylesheet_directory_uri() . '/library/js/scripts.js', 
 		array('jquery'), 
@@ -60,6 +69,22 @@ function ophelia_theme_js(){
     wp_enqueue_script('ophelia_scripts');	
 }
 add_action( 'wp_footer', 'ophelia_theme_js' );
+
+
+function wp_ophelia_bootstrap_main_nav() {
+	// display the wp3 menu if available
+    wp_nav_menu( 
+    	array( 
+    		'menu' => 'main_nav', /* menu name */
+    		'menu_class' => 'nav navbar-nav page-scroll',
+    		'theme_location' => 'main_nav', /* where in the theme it's assigned */
+    		'container' => 'false', /* container class */
+    		'fallback_cb' => 'wp_bootstrap_main_nav_fallback', /* menu fallback */
+    		'depth' => '2',  /* suppress lower levels for now */
+    		'walker' => new Bootstrap_walker(),
+    	)
+    );
+}
 
 
 /***************************************************
