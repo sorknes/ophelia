@@ -5,5 +5,12 @@ var nav = responsiveNav("#nav", {
 	customToggle: "#nav-toggle",
 });
 
-// Scrollspy
-jQuery('body').scrollspy({ target: '.navbar-example' })
+jQuery(function() {
+    jQuery('.page-scroll li a').bind('click', function(event) {
+        var $anchor = jQuery(this);
+        jQuery('html, body').stop().animate({
+            scrollTop: jQuery($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
