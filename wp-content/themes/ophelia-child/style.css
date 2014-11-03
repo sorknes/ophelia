@@ -301,6 +301,68 @@ header .container-fluid {
 	}
 
 
+/* =about
+-------------------------------------------------------------- */
+.about {
+	background-color: #f2f2f2;
+}
+
+	.about h2 {
+		margin: 0;
+		margin-bottom: 30px;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 800;
+	}
+	
+		.about .title > h2 {
+			background-color: #f2f2f2;
+		}
+		
+	.about .container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+		.about .container .content {
+			padding: 4em;
+		}
+	
+	.about .social {
+		background-color: rgba(0,0,0,0.2);
+	}
+	
+		.about .social ul {
+			padding: 0;
+			margin: 0;
+			list-style-type: none;
+		}
+		
+			.about .social li {
+				width: 25%;
+				text-align: center;
+				text-transform: uppercase;
+				float: left;
+			}
+			
+				.about .social li:first-child {
+					padding: 2em 0;
+					background-color: #fff;
+				}
+		
+			.about .social li a {
+				width: 100%;
+				padding: 2em 0;
+				display: inline-block;
+			}
+			
+			.about .social li a:hover, .about .social li a:focus {
+				color: #fff;
+				text-decoration: none;
+				background-color: rgba(0,0,0,0.5);
+			}
+
+
 /* =News
 -------------------------------------------------------------- */
 .news {
@@ -344,7 +406,7 @@ header .container-fluid {
 	
 	/* ==Logo */
 	.logo {
-		width: 35%;
+		width: 20%;
 		height: 80px;
 		text-align: left;
 		float: left;
@@ -358,7 +420,7 @@ header .container-fluid {
 	
 	/* ==Navigation */
 	.nav-collapse {
-		width: 65%;
+		width: 80%;
 		float: right;
 	}
 	
@@ -367,7 +429,7 @@ header .container-fluid {
 	}
 	
 	.nav-collapse li {
-		width: 20%;
+		width: 16.6666667%;
 		font-size: 1.250em;
 		border-bottom: none;
 		border-right: 1px solid #666;
@@ -438,6 +500,17 @@ header .container-fluid {
 	.intro-inner .intro-btn .btn-left a {
 		float: left;
 		margin-left: 20px;
+	}
+	
+	/* =about
+	-------------------------------------------------------------- */
+	.about .content {
+			-webkit-column-gap: 40px;
+			-moz-column-gap: 40px;
+		column-gap: 40px;
+			-webkit-column-count: 2;
+			-moz-column-count: 2;
+		column-count: 2;
 	}
 }
 

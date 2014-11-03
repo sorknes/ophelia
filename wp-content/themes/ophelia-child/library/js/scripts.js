@@ -9,8 +9,9 @@ jQuery(function() {
     jQuery('.page-scroll li a').bind('click', function(event) {
         var $anchor = jQuery(this);
         jQuery('html, body').stop().animate({
-            scrollTop: jQuery($anchor.attr('href')).offset().top
+            scrollTop: ((jQuery($anchor.attr('href')).offset().top) - 80)
         }, 1500, 'easeInOutExpo');
+        
         event.preventDefault();
     });
 });

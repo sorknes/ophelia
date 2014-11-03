@@ -64,6 +64,10 @@ get_header();
 			</div>
 			<!-- end: intro -->
 			
+			<!-- start: about -->
+			<?php get_template_part( 'part', 'about' ); ?>
+			<!-- end: about -->
+			
 			<div id="news" class="container news">
 				<div class="row">
 					news
