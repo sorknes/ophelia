@@ -21,6 +21,9 @@ body {
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
 	position: relative;
+	font-weight: 300;
+	letter-spacing: 0.5px;
+	background-color: #f9f9f9;
 }
 
 
@@ -32,7 +35,7 @@ body {
 
 .btn {
 	color: #000;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	border: 2px solid #000;
 	border-radius: 0;
 }
@@ -50,6 +53,10 @@ a:hover, a:focus {
 		-webkit-transition: all 0.3s;
 		-moz-transition: all 0.3s;
 	transition: all 0.3s;
+}
+
+p.lead {
+	color: #000;
 }
 
 /* =Typography
@@ -132,6 +139,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .container-fluid {
 	max-width: 100%;
+	width: 100%;
 }
 
 /* =Header
@@ -153,7 +161,7 @@ header .container-fluid {
 	padding: 15px 0;
 	text-align: center;
 	float: left;
-	background-color: #eee;
+	background-color: #fff;
 }
 
 	.logo img {
@@ -207,13 +215,13 @@ header .container-fluid {
 		float: left;
 	}
 	
-	.nav-collapse a:hover {
+	/*.nav-collapse a:hover {
 		color: #000;
-	}
+	}*/
 	
-	.nav-collapse a:focus {
+	.nav-collapse a:hover , .nav-collapse a:focus {
 		color: #fff;
-		background-color: #89000a !important;
+		background-color: #723147 !important;
 		outline: none;
 	}
 
@@ -281,8 +289,7 @@ header .container-fluid {
 	padding: 0.5em 3em;
 	color: #fff;
 	font-size: 1.5em;
-	border-color: #fff;
-	border-width: 4px;
+	border: 4px solid #fff;
 }
 
 	.intro-inner .intro-btn .btn-right a,
@@ -296,40 +303,45 @@ header .container-fluid {
 		background-color: #fff;
 	}
 	
-	.intro-inner a:hover {
-		background: #89000a;
+	.intro-inner .btn:hover {
+		border-color: #31152b;
+	}
+	
+	.intro-inner a:hover, .intro-inner a:focus {
+		background: #723147;
 	}
 
 
 /* =about
 -------------------------------------------------------------- */
+.about.wrapper {
+	height: auto;
+	background-color: #ebe9dc;
+}
+
 .about {
-	background-color: #f2f2f2;
+	color: #444;
+	font-size: 1.250em;
 }
 
 	.about h2 {
+		padding-top: 1.5em;
 		margin: 0;
-		margin-bottom: 30px;
+		margin-bottom: 1.250em;
 		text-align: center;
-		text-transform: uppercase;
-		font-weight: 800;
+		font-size: 2.5em;
 	}
 	
 		.about .title > h2 {
 			background-color: #f2f2f2;
 		}
-		
-	.about .container {
-		padding-left: 0;
-		padding-right: 0;
-	}
 	
 		.about .container .content {
-			padding: 4em;
+			padding-bottom: 4em;
 		}
 	
 	.about .social {
-		background-color: rgba(0,0,0,0.2);
+		background-color: rgba(0,0,0,0.1);
 	}
 	
 		.about .social ul {
@@ -341,41 +353,76 @@ header .container-fluid {
 			.about .social li {
 				width: 25%;
 				text-align: center;
-				text-transform: uppercase;
+				/*text-transform: uppercase;*/
 				float: left;
+				border-right: 1px solid rgba(255,255,255,0.4);
+					-webkit-box-sizing: border-box;
+					-moz-box-sizing: border-box;
+				box-sizing: border-box;
 			}
 			
 				.about .social li:first-child {
+					height: 100%;
 					padding: 2em 0;
+					color: #555;
+					display: inline-block;
 					background-color: #fff;
+				}
+				
+				.about .social li:last-child {
+					border-right: 0;
 				}
 		
 			.about .social li a {
 				width: 100%;
 				padding: 2em 0;
+				color: #333;
+				/*font-weight: 600;*/
 				display: inline-block;
 			}
 			
 			.about .social li a:hover, .about .social li a:focus {
 				color: #fff;
 				text-decoration: none;
-				background-color: rgba(0,0,0,0.5);
+				/*background-color: rgba(0,0,0,0.5);*/
+			}
+			
+			.about .facebook:hover, .about .facebook:focus {
+				background-color: #3B5998;
+			}
+			
+			.about .instagram:hover, .about .instagram:focus {
+				background-color: #517fa4
+			}
+			
+			.about .vimeo:hover, .about .vimeo:focus {
+				background-color: #aad450;
 			}
 
 
 /* =News
 -------------------------------------------------------------- */
-.news {
-	height: 2000px;
-	background-color: green;
+.news.wrapper {
+	height: auto;
+	background-color: ;
 }
+
+.news .container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+	.news .container-fluid .row {
+		margin-left: 0;
+		margin-right: 0;
+	}
 
 
 /* =Dinner
 -------------------------------------------------------------- */
 .dinner {
 	height: 2000px;
-	background-color: blue;
+	background-color: ;
 }
 
 
@@ -408,14 +455,14 @@ header .container-fluid {
 	.logo {
 		width: 20%;
 		height: 80px;
-		text-align: left;
-		float: left;
+		/*text-align: left;
+		float: left;*/
 	}
 	
 		.logo img {
 			width: auto;
 			max-width: 230px;
-			margin: 0 10px 0 30px;
+			margin: 0 10px;
 		}
 	
 	/* ==Navigation */
@@ -504,6 +551,11 @@ header .container-fluid {
 	
 	/* =about
 	-------------------------------------------------------------- */
+	.about .container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
 	.about .content {
 			-webkit-column-gap: 40px;
 			-moz-column-gap: 40px;

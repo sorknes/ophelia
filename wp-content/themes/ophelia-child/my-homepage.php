@@ -50,7 +50,7 @@ get_header();
 							</div>
 							<div class="col-xs-12 col-sm-6 btn-left">
 								<a class="btn large" href="<?php echo $intro_custom_link_2 ?>" title="Dinner">
-									Dinner
+									Diner
 									<span class="border-bottom"></span>
 								</a>
 							</div>
@@ -68,11 +68,9 @@ get_header();
 			<?php get_template_part( 'part', 'about' ); ?>
 			<!-- end: about -->
 			
-			<div id="news" class="container news">
-				<div class="row">
-					news
-				</div>
-			</div>
+			<!-- start: news -->
+			<?php get_template_part( 'part', 'news' ); ?>
+			<!-- end: news -->
 			
 			<div id="dinner" class="container dinner">
 				<div class="row">

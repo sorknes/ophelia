@@ -28,7 +28,7 @@ add_action( 'widgets_init', 'remove_some_widgets', 11 );
 
 
 function load_fonts() {
-            wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400,800,800italic,400italic,700,700italic');
+            wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,800,800italic,600,600italic');
             wp_enqueue_style( 'googleFonts');
         }
     
