@@ -86,6 +86,40 @@ function wp_ophelia_bootstrap_main_nav() {
     );
 }
 
+/***************************************************
+*
+ 	Multiple thumbnails
+*
+****************************************************/
+if (class_exists('MultiPostThumbnails')) {
+    new MultiPostThumbnails(
+        array(
+            'label' => 'Fremhevet bilde 2',
+            'id' => 'second-image',
+            'post_type' => 'page'
+        )
+    );
+}
+
+if (class_exists('MultiPostThumbnails')) {
+    new MultiPostThumbnails(
+        array(
+            'label' => 'Fremhevet bilde 3',
+            'id' => 'third-image',
+            'post_type' => 'page'
+        )
+    );
+}
+
+if (class_exists('MultiPostThumbnails')) {
+    new MultiPostThumbnails(
+        array(
+            'label' => 'Fremhevet bilde 4',
+            'id' => 'fourth-image',
+            'post_type' => 'page'
+        )
+    );
+}
 
 /***************************************************
 *

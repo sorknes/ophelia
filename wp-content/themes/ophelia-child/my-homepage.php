@@ -72,10 +72,16 @@ get_header();
 			<?php get_template_part( 'part', 'news' ); ?>
 			<!-- end: news -->
 			
-			<div id="dinner" class="container dinner">
-				<div class="row">
-					dinner
-				</div>
-			</div>
+			<!-- start: diner -->
+			<?php get_template_part( 'part', 'diner' ); ?>
+			<!-- end: diner -->
+			
+			<!-- start: club -->
+			<?php get_template_part( 'part', 'club' ); ?>
+			<!-- end: club -->
+			
+			<!-- start: booking -->
+			<?php get_template_part( 'part', 'booking' ); ?>
+			<!-- end: booking -->
 
 <?php get_footer(); ?>

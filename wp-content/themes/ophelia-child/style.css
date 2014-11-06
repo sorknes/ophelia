@@ -55,9 +55,9 @@ a:hover, a:focus {
 	transition: all 0.3s;
 }
 
-p.lead {
+/*p.lead {
 	color: #000;
-}
+}*/
 
 /* =Typography
 -------------------------------------------------------------- */
@@ -142,6 +142,10 @@ h1,h2,h3,h4,h5,h6 {
 	width: 100%;
 }
 
+.img-wrap {
+	margin-bottom: 2em;
+}
+
 /* =Header
 -------------------------------------------------------------- */
 /* ==Layout */
@@ -189,6 +193,7 @@ header .container-fluid {
 		margin: 0;
 		display: block;
 		list-style: none;
+		background-color: #000;
 	}
 	
 		.nav-collapse li {
@@ -303,9 +308,9 @@ header .container-fluid {
 		background-color: #fff;
 	}
 	
-	.intro-inner .btn:hover {
+	/*.intro-inner .btn:hover {
 		border-color: #31152b;
-	}
+	}*/
 	
 	.intro-inner a:hover, .intro-inner a:focus {
 		background: #723147;
@@ -316,7 +321,7 @@ header .container-fluid {
 -------------------------------------------------------------- */
 .about.wrapper {
 	height: auto;
-	background-color: #ebe9dc;
+	background-color: #f9f9f9;
 }
 
 .about {
@@ -331,10 +336,6 @@ header .container-fluid {
 		text-align: center;
 		font-size: 2.5em;
 	}
-	
-		.about .title > h2 {
-			background-color: #f2f2f2;
-		}
 	
 		.about .container .content {
 			padding-bottom: 4em;
@@ -377,6 +378,7 @@ header .container-fluid {
 				width: 100%;
 				padding: 2em 0;
 				color: #333;
+				/*color: #fff;*/
 				/*font-weight: 600;*/
 				display: inline-block;
 			}
@@ -404,7 +406,7 @@ header .container-fluid {
 -------------------------------------------------------------- */
 .news.wrapper {
 	height: auto;
-	background-color: ;
+	background-color: #fff;
 }
 
 .news .container-fluid {
@@ -418,12 +420,62 @@ header .container-fluid {
 	}
 
 
-/* =Dinner
+/* =Diner
 -------------------------------------------------------------- */
-.dinner {
-	height: 2000px;
-	background-color: ;
+.diner.wrapper {
+	height: auto;
 }
+
+	.diner h2 {
+		padding-top: 1.5em;
+		margin: 0;
+		margin-bottom: 1.250em;
+		text-align: center;
+		font-size: 2.5em;
+	}
+	
+		.diner .container .content {
+			padding-bottom: 4em;
+		}
+		
+
+/* =Club
+-------------------------------------------------------------- */
+.club.wrapper {
+	height: auto;
+	background-color: #fff;
+}
+
+	.club h2 {
+		padding-top: 1.5em;
+		margin: 0;
+		margin-bottom: 1.250em;
+		text-align: center;
+		font-size: 2.5em;
+	}
+	
+		.club .container .content {
+			padding-bottom: 4em;
+		}
+		
+/* =Booking
+-------------------------------------------------------------- */
+.booking.wrapper {
+	height: auto;
+}
+
+	.booking h2 {
+		padding-top: 1.5em;
+		margin: 0;
+		margin-bottom: 1.250em;
+		text-align: center;
+		font-size: 2.5em;
+	}
+	
+		.booking .container .content {
+			padding-bottom: 4em;
+			text-align: center;
+		}
 
 
 /* =Media queries
@@ -557,6 +609,38 @@ header .container-fluid {
 	}
 	
 	.about .content {
+			-webkit-column-gap: 40px;
+			-moz-column-gap: 40px;
+		column-gap: 40px;
+			-webkit-column-count: 2;
+			-moz-column-count: 2;
+		column-count: 2;
+	}
+	
+	/* =diner
+	-------------------------------------------------------------- */
+	.diner .container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.diner .content {
+			-webkit-column-gap: 40px;
+			-moz-column-gap: 40px;
+		column-gap: 40px;
+			-webkit-column-count: 2;
+			-moz-column-count: 2;
+		column-count: 2;
+	}
+	
+	/* =diner
+	-------------------------------------------------------------- */
+	.club .container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.club .content {
 			-webkit-column-gap: 40px;
 			-moz-column-gap: 40px;
 		column-gap: 40px;

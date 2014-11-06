@@ -13,7 +13,7 @@
 			
 			<div class="social clearfix">
 				<ul>
-					<li>Sjekk oss på sosiale medier:</li>
+					<li><small>Sjekk oss på sosiale medier:</small></li>
 					<li><a class="facebook" href="" title="Besøk vår Facebook side">Facebook</a></li>
 					<li><a class="instagram" href="" title="Besøk vår Instagram side">Instagram</a></li>
 					<li><a class="vimeo" href="" title="Besøk vår Viemo side">Vimeo</a></li>
